@@ -1,13 +1,12 @@
-import java.util.ArrayList;
+/* import java.util.ArrayList;
 
-public class TaskManager {
-    private ArrayList<Task> tasks = new ArrayList<>();
+public class TaskManager< T extend Task> {
+    private List<T> tasks = new ArrayList<>();
 
 
     // Add a new task
-    public void addTask (String title, String description){
-        Task newTask = new Task(title, description);
-        tasks.add(newTask);
+    public void addTask (T task){
+        tasks.add(task);
     }
 
     // Show Dem tasks
@@ -32,8 +31,9 @@ public class TaskManager {
     }
 
     // Delete Task
-    public void deleteTask(int index) {
-        if (index >= 0 && index < tasks.size()) {
+    public void deleteTask(int deleteIndex) {
+        int index = 0;
+        if (index < tasks.size()) {
             Task removed = tasks.remove(index);
             System.out.println("Deleted Task: " + removed.getTitle());
         } else {
@@ -42,3 +42,5 @@ public class TaskManager {
     }
 
 }
+
+*/
